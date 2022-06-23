@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width" />
+  <title>Lists</title>
+</head>
+
+<body>
+
+  <p>This is an unordered list. It uses bullet point by default.
+  </p>
+  <ul>
+    <li>flour</li>
+    <li>milk</li>
+    <li>eggs</li>
+  </ul>
+
+  <p>This is an ordered list. It uses numbered items</p>
+  <ol>
+    <li>flour</li>
+    <li>eggs</li>
+    <li>milk</li>
+  </ol>
+
+  <p>This list has a value added inside its' list tag in order to change the position.</p>
+  <ol>
+    <li>Head north on N Halsted St</li>
+    <li value="9">Turn right on W Diversey Pkwy</li>
+    <li>Turn left on N Orchard St</li>
+  </ol>
+
+  <p>If you add 'reversed' inside the ordered list tag you will get:</p>
+  <ol reversed>
+    <li>one</li>
+    <li>two</li>
+    <li>three</li>
+  </ol>
+
+
+  <p>This shows how to make a defined list in HTML. Shamelessly copied from the internet.</p>
+  <pre><code class="html tag start-tag">
+      &#x3C;dt&#x3E;study&#x3C;/dt&#x3E;
+      &#x3C;dd&#x3E;The devotion of time and attention to acquiring knowledge on an academic subject, especially by
+      means of books&#x3C;/dd&#x3E;
+      &#x3C;dt&#x3E;design&#x3C;/dt&#x3E;
+      &#x3C;dd&#x3E;A plan or drawing produced to show the look and function or workings of a building, garment, or
+      other object before it is built or made&#x3C;/dd&#x3E;
+      &#x3C;dd&#x3E;Purpose, planning, or intention that exists or is thought to exist behind an action, fact, or
+      material object&#x3C;/dd&#x3E;
+      &#x3C;dt&#x3E;business&#x3C;/dt&#x3E;
+      &#x3C;dt&#x3E;work&#x3C;/dt&#x3E;
+      &#x3C;dd&#x3E;A person&#x27;s regular occupation, profession, or trade&#x3C;/dd&#x3E;
+      &#x3C;/dl&#x3E;
+    </code></pre>
+  <p>This is the result:</p>
+  <dl>
+    <dt>study</dt>
+    <dd>The devotion of time and attention to acquiring knowledge on an academic subject, especially by means of books
+    </dd>
+    <dt>design</dt>
+    <dd>A plan or drawing produced to show the look and function or workings of a building, garment, or other object
+      before it is built or made</dd>
+    <dd>Purpose, planning, or intention that exists or is thought to exist behind an action, fact, or material object
+    </dd>
+    <dt>business</dt>
+    <dt>work</dt>
+    <dd>A person's regular occupation, profession, or trade</dd>
+  </dl>
+
+  <p>This shows how to nest items within the list to make it look more palatable. Practice will be needed in order to
+    make it correctly.</p>
+  <pre><code class="html tag start-tag">
+      &lt;ol&gt;
+      &lt;li&gt;Walk the dog&lt;/li&gt;
+      &lt;liFold laundry/li&gt;
+      &lt;li&gt; Go to the grocery and buy:
+      &lt;ul&gt;
+      &lt;liMilk/li&gt;
+      &lt;liBread/li&gt;
+      &lt;liCheese/li&gt;
+      &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;liMow the lawn/li&gt;
+      &lt;liMake dinner/li&gt;
+      &lt;/ol&gt;
+    </code>
+  </pre>
+  <!-- The following was created by wrapping with pre and code tags and using an online converter.
+    <pre><code>      &#x3C;ol&#x3E;
+   &#x3C;li&#x3E;Walk the dog&#x3C;/li&#x3E;
+   &#x3C;liFold laundry/li&#x3E;
+
+  &#x3C;li&#x3E;
+    Go to the grocery and buy:
+    &#x3C;ul&#x3E;
+      &#x3C;liMilk/li&#x3E;
+      &#x3C;liBread/li&#x3E;
+      &#x3C;liCheese/li&#x3E;
+    &#x3C;/ul&#x3E;
+  &#x3C;/li&#x3E;
+
+  &#x3C;liMow the lawn/li&#x3E;
+  &#x3C;liMake dinner/li&#x3E;
+&#x3C;/ol&#x3E;</code></pre> -->
+  <p>The result:</p>
+  <ol>
+    <li>Walk the dog</li>
+    <li>Fold laundry</li>
+    <li> Go to the grocery and buy:
+      <ul>
+        <li>Milk</li>
+        <li>Bread</li>
+        <li>Cheese</li>
+      </ul>
+    </li>
+    <li>Mow the lawn</li>
+    <li>Make dinner</li>
+  </ol>
+
+</body>
+
+</html>
